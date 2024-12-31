@@ -1,0 +1,166 @@
+body {
+    background-color: rgb(78 121 105); /* Updated to dominant green color */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background-color: rgb(78 121 105); /* Darker shade of green */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.header .close-icon {
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: auto;
+    text-decoration: none;
+}
+
+.header .close-icon:hover {
+    font-size: 2rem;
+    color:#ffff; /* Slight variation in green */
+}
+
+/* Form Container */
+.form-container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    margin: 3rem auto;
+    height: 500px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.form-box {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    transition: transform 0.6s ease-in-out;
+}
+
+.login-box {
+    left: 0;
+    z-index: 2;
+}
+
+.register-box {
+    left: 50%;
+    z-index: 1;
+    transform: translateX(100%);
+}
+
+.active .login-box {
+    transform: translateX(100%);
+}
+
+.active .register-box {
+    transform: translateX(-100%);
+    z-index: 3;
+}
+
+/* Textbox Styling */
+.form-control {
+    border: 2px solid rgb(58, 92, 79); /* Matching green border */
+    border-radius: 25px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 10px rgba(58, 92, 79, 0.8);
+    border-color: rgb(59, 93, 80);
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+/* Overlay for Animation */
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 5;
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay {
+    background: linear-gradient(135deg, rgb(58, 92, 79), rgb(50, 79, 68));
+    color: #fff;
+    position: relative;
+    width: 200%;
+    height: 100%;
+    left: -100%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.overlay-left {
+    transform: translateX(-20%);
+}
+
+.overlay-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.active .overlay {
+    transform: translateX(50%);
+}
+
+.active .overlay-left {
+    transform: translateX(0);
+}
+
+.active .overlay-right {
+    transform: translateX(20%);
+}
+
+.btn-primary {
+    background-color: rgb(58, 92, 79);
+    border: none;
+    border-radius: 25px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: rgb(59, 93, 80);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}

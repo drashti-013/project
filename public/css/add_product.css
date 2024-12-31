@@ -1,0 +1,34 @@
+/* Product Form Styling */
+.container .title {
+    color: #211d1d; /* Sidebar-like text color */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #007bff; /* Sidebar background color */
+    /* background-color: #333; Sidebar background color */
+    color: #fff; /* Text color */
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Sidebar active link color */
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Input focus color */
+.form-control:focus, .form-check-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.status-switch .form-check-input:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}

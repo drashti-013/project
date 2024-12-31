@@ -1,0 +1,32 @@
+    /* Styling for Watchlist Icon button */
+    .watchlist-btn {
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        border: none;
+        border-radius: 50%;
+        padding: 10px;
+        transition: all 0.3s ease;
+        height: 37px;
+    }
+
+    .watchlist-btn:hover {
+        background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+    }
+
+    .watchlist-btn i {
+        font-size: 21px;
+        position: relative;
+        top: -3px;
+    }
+
+
+    /* Styling for price with rupee icon */
+    .rupee-icon {
+        font-size: 18px;
+        color: #dc3545; /* Red color for rupee symbol */
+    }
+
+    /* Adjust button size for "Add" and "View Details" buttons */
+    .btn-sm {
+        padding: 5px 10px;
+        font-size: 14px;
+    }

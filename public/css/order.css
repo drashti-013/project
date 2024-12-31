@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    font-family: 'Arial', sans-serif;
+}
+.card {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.order-header {
+    background: #6c757d;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px 12px 0 0;
+}
+.btn-actions {
+    transition: all 0.3s ease;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.btn-actions:hover {
+    transform: scale(1.1);
+}
+.table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+}
+.badge {
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 50px;
+}
+h1 {
+    font-size: 2.5rem;
+    color: #495057;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
